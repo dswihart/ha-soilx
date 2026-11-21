@@ -4,9 +4,13 @@
     "step": {
       "user": {
         "description": "Choose the meter to set up. It must be switched on and within range of a Bluetooth adapter or proxy.",
-        "data": { "address": "Meter" }
+        "data": {
+          "address": "Meter"
+        }
       },
-      "bluetooth_confirm": { "description": "Set up {name}?" }
+      "bluetooth_confirm": {
+        "description": "Set up {name}?"
+      }
     },
     "abort": {
       "no_devices_found": "No SoilX meter found. Wake the meter (it switches itself off after a few minutes on battery; it stays on while charging) and close the phone app, which blocks other connections.",
@@ -18,17 +22,30 @@
     "step": {
       "init": {
         "description": "The meter allows one Bluetooth connection at a time, so Home Assistant connects, reads and disconnects.",
-        "data": { "scan_interval": "Seconds between readings" }
+        "data": {
+          "scan_interval": "Seconds between readings"
+        }
       }
     }
   },
   "entity": {
     "sensor": {
-      "moisture": { "name": "Soil moisture" },
-      "conductivity": { "name": "Soil conductivity" }
+      "moisture": {
+        "name": "Soil moisture"
+      },
+      "conductivity": {
+        "name": "Soil conductivity"
+      }
     },
     "binary_sensor": {
-      "external_power": { "name": "External power" }
+      "external_power": {
+        "name": "External power"
+      }
+    },
+    "button": {
+      "sync_now": {
+        "name": "Sync now"
+      }
     }
   }
 }
