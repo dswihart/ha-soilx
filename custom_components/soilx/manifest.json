@@ -1,0 +1,14 @@
+{
+  "domain": "soilx",
+  "name": "SoilX Soil Meter",
+  "bluetooth": [{ "local_name": "Soil_Monitoring", "connectable": true }],
+  "codeowners": ["@dswihart"],
+  "config_flow": true,
+  "dependencies": ["bluetooth_adapters"],
+  "documentation": "https://github.com/dswihart/ha-soilx",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/dswihart/ha-soilx/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
